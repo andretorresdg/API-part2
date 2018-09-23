@@ -23,7 +23,7 @@ class App extends Component {
 
   logout = () => {
   	// call logout endpoint
-  	axios.get('/logout')
+  	axios.get('http://localhost:5000/logout')
   		.then((response) => {
   			// response should be null/empty
   			console.log(JSON.stringify(response, undefined, 2));
@@ -40,7 +40,7 @@ class App extends Component {
   	// data = {email:'name',password:'secret'}
   	console.log(JSON.stringify(data));
   	//call login endpoint and set currentuser
-  	axios.post('/login', {
+  	axios.post('http://localhost:5000/login', {
   		email: data.email,
   		password: data.password
   	})
