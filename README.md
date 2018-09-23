@@ -4,9 +4,9 @@
 
 
 
-# **AndreDevayReact**
+# **API-part2**
 
-> AndreDevayReact is a free web application which is written in JavaScript, using ReactJS, that commmunicates with the AndreDevayAPI. This program has a route to handle the login (with SignUp, Edit Password and all the other functions of a basic register user). Also, it contains an authentication method.
+> API-part2 is a free web application which is written in JavaScript, using ReactJS, that commmunicates with the API-part1. This program has a route to handle the login (with SignUp, Edit Password and all the other functions of a basic register user). Also, it contains an authentication method.
 
 
 Feel free to see the source code [here](https://github.com/andretorresdg/AndreDevayAPI) .
@@ -61,27 +61,58 @@ And these packages:
 - [Request](https://www.npmjs.com/package/request)
 - [Joi](https://www.npmjs.com/package/joi)
 - [Babbel](https://babeljs.io/docs/en/usage)
+- [EsLint](https://github.com/shareTheVelopment/tv-linter)
+- [Axios](https://www.npmjs.com/package/axios)
+- [JSDoc](https://www.npmjs.com/package/jsdoc)
+- [Supertest](https://www.npmjs.com/package/supertest)
+- [Jest](https://www.npmjs.com/package/jest)
+
 
 ---
 
 ## Installing
 
+> First, make sure you have already downloaded my API (if you do not, click [here](#initiating) and follow those steps before continuing the installing procedure)
 
+> Then, open your command prompt and write "cd" + the path of the downloaded folder
+
+
+For example:
+```shell
+$ cd D:\Users\Admin\Desktop\API-part2
+```
+
+> Now, install all the packages with the followig command:
+
+```shell
+$ npm install 
+```
+
+> If you want to install the nodemon, you should use this command:
+
+```shell
+$ npm install -g nodemon
+```
+ > Finally, you can test the API!
 
 
 ---
 
 ## Testing
 
+
+
+
+
 ---
 
 ## Author
 
+
+
 ![](https://media.licdn.com/dms/image/C4D03AQFUz7v2_Sr8rg/profile-displayphoto-shrink_200_200/0?e=1542844800&v=beta&t=Du-qqKbWMHPeq6Er3SDOVxrdX0dUE_jWQ-wGuamWVig)
 
 | <a href="https://www.linkedin.com/in/andredevay/" target="_blank">**André Devay Torres Gomes**</a> |
-
-
 
 ---
 
