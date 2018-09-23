@@ -66,6 +66,7 @@ class App extends Component {
         };
   		})
   		.catch((error) => {
+        console.log(error);
   			window.alert('Ocorreu um erro de autenticação');
   		});
   }
