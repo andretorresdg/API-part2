@@ -40,9 +40,13 @@ class App extends Component {
   	// data = {email:'name',password:'secret'}
   	console.log(JSON.stringify(data));
   	//call login endpoint and set currentuser
-  	axios.post('http://localhost:5000/login', {
-  		email: data.email,
-  		password: data.password
+  	axios({
+      method: 'post',
+      url: 'http://localhost:5000/login', 
+      data: {
+        email: data.email,
+        password: data.password
+      }
   	})
   		.then((res) => {
         var user = res.data;
