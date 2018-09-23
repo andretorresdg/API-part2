@@ -27,11 +27,6 @@
 .form button {
   font-family: "Times New Roman", Times, serif;
   text-transform: uppercase;
-  outline: 0;
-  background: #94da97;
-  width: 47,5%;
-  border: 0;
-  padding: 10px;
   color: #FFFFFF;
   font-size: 14px;
   cursor: pointer;
