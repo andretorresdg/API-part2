@@ -41,36 +41,36 @@ class App extends Component {
   	console.log(JSON.stringify(data));
   	//call login endpoint and set currentuser
   	axios({
-      method: 'post',
-      url: 'http://localhost:5000/login', 
-      data: {
-        email: data.email,
-        password: data.password
-      }
+  		method: 'post',
+  		url: 'http://localhost:5000/login', 
+  		data: {
+  			email: data.email,
+  			password: data.password
+  		}
   	})
   		.then((res) => {
-        var user = res.data;
-        if (res.status === 200) {
-          console.log(JSON.stringify(user, undefined, 2));
-          this.setState({
-            currentuser: {
-              email: user.email,
-              first_name: user.first_name,
-              last_name: user.last_name,
-              personal_phone: user.personal_phone,
-              _id: user._id
-            }
-          });
-        }
-        else if (res.status === 400) {
-          window.alert('Não encontramos esse email registrado. Por favor, crie uma conta.')
-        }
-        else if (res.status === 404) {
-          window.alert('Ocorreu um erro de validação, certifique-se que a senha foi inserida corretamente.')
-        };
+  			var user = res.data;
+  			if (res.status === 200) {
+  				console.log(JSON.stringify(user, undefined, 2));
+  				this.setState({
+  					currentuser: {
+  						email: user.email,
+  						first_name: user.first_name,
+  						last_name: user.last_name,
+  						personal_phone: user.personal_phone,
+  						_id: user._id
+  					}
+  				});
+  			}
+  			else if (res.status === 400) {
+  				window.alert('Não encontramos esse email registrado. Por favor, crie uma conta.');
+  			}
+  			else if (res.status === 404) {
+  				window.alert('Ocorreu um erro de validação, certifique-se que a senha foi inserida corretamente.');
+  			};
   		})
   		.catch((error) => {
-        console.log(error);
+  			console.log(error);
   			window.alert('Ocorreu um erro de autenticação');
   		});
   }
